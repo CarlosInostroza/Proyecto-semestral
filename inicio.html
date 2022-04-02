@@ -34,13 +34,13 @@
               <div class="col-sm-2 bg-dark" style="min-height: 80vh;">
                 <ul class="nav nav-pills flex-column mt-3">
                     <li class="nav-item activo rounded mt-1">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-home"></i>Perros</a>
+                        <a class="nav-link" href="perros.html"><i class="fa-solid fa-home"></i>Perros</a>
                     </li>
                     <li class="nav-item mt-1">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-graduation-cap"></i> Gatos</a>
+                        <a class="nav-link" href="gatos.html"><i class="fa-solid fa-graduation-cap"></i> Gatos</a>
                     </li>
                     <li class="nav-item mt-1">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-bookmark"></i> Animales pequeños</a>
+                        <a class="nav-link" href="animalespequeños.html"><i class="fa-solid fa-bookmark"></i> Animales pequeños</a>
                     </li>
                     <li class="nav-item mt-1">
                         <a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket"></i> Accesorios</a>
@@ -54,7 +54,7 @@
                           <img class="card-img-top" src="img/Arena-para-gato-Traper-4-kg-1-26321765.png" alt="Card image">
                           <div class="card-body">
                               <h5 class="card-title">Arena para gatos</h5><br>
-                              <a href="#" class="btn btn-primary">Comprar</a>
+                              <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#ModalArenaGato">Comprar</a>
                           </div>
                       </div>
                   </div>
@@ -62,8 +62,8 @@
                       <div class="card" style="width:200px">
                           <img class="card-img-top" src="img/Lindos-antideslizante-gato-cuencos-de-doble-tazones_storage-93529.jpg" alt="Card image">
                           <div class="card-body">
-                              <h5 class="card-title">Cuento antideslizante</h5>
-                              <a href="#" class="btn btn-primary">Comprar</a>
+                              <h5 class="card-title">Cuenco antideslizante</h5>
+                              <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#ModalCuenco">Comprar</a>
                           </div>
                       </div>
                   </div>
@@ -72,7 +72,7 @@
                           <img class="card-img-top" src="img/collar para perros.jpg" alt="Card image">
                           <div class="card-body">
                               <h4 class="card-title">Collar para perros</h4>
-                              <a href="#" class="btn btn-primary">Comprar</a>
+                              <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#ModalCollar">Comprar</a>
                           </div>
                       </div>
                   </div>
@@ -84,7 +84,7 @@
                           <img class="card-img-top" src="img/comida para perros.jpg" alt="Card image">
                           <div class="card-body">
                               <h5 class="card-title">Comida para perros</h5>
-                              <a href="#" class="btn btn-primary">Comprar</a>
+                              <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#ModalComidaPerros">Comprar</a>
                           </div>
                       </div>
                   </div>
@@ -93,7 +93,7 @@
                           <img class="card-img-top" src="img/comida para hamsters.jpg" alt="Card image">
                           <div class="card-body">
                               <h5 class="card-title">Comida para hamsters</h5>
-                              <a href="#" class="btn btn-primary">Comprar</a>
+                              <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#ModalComidaHamsters">Comprar</a>
                           </div>
                       </div>
                   </div>
@@ -102,7 +102,7 @@
                           <img class="card-img-top" src="img/jaula para hamster.jpg" alt="Card image">
                           <div class="card-body">
                               <h5 class="card-title">Jaula para hamsters</h5>
-                              <a href="#" class="btn btn-primary">Comprar</a>
+                              <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#ModalJaulaHamsters">Comprar</a>
                           </div>
                       </div>
                   </div>
@@ -112,7 +112,7 @@
           </div>
       </div>
 
-<!-- The Modal -->
+<!-- Modal inicio de sesion -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -155,6 +155,246 @@
   </div>
 </div>
 
+<!-- Modal arena para gatos -->
+<div class="modal" id="ModalArenaGato">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Arena para gatos</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicio.html" method="GET">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/Arena-para-gato-Traper-4-kg-1-26321765.png" width="150px" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h2>Precio</h2>
+                  $6990
+                  <div class="form-group" style="margin-left: 70px;">
+                  <label for="txtCantidad">Cantidad</label>
+                  <input type="number" class="form-control" id="txtCantidad" name="txtCantidad" placeholder="Ej:10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 70px;">
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Cuenco antideslizante -->
+<div class="modal" id="ModalCuenco">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Cuenco antideslizante</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicio.html" method="GET">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/Lindos-antideslizante-gato-cuencos-de-doble-tazones_storage-93529.jpg" width="140px" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h2>Precio</h2>
+                  $12000
+                  <div class="form-group" style="margin-left: 70px;">
+                  <label for="txtCantidad">Cantidad</label>
+                  <input type="number" class="form-control" id="txtCantidad" name="txtCantidad" placeholder="Ej:10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 70px;">
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Modal collar para perros -->
+<div class="modal" id="ModalCollar">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Collar para perros</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicio.html" method="GET">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/collar para perros.jpg" width="140px" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h2>Precio</h2>
+                  $9000
+                  <div class="form-group" style="margin-left: 70px;">
+                  <label for="txtCantidad">Cantidad</label>
+                  <input type="number" class="form-control" id="txtCantidad" name="txtCantidad" placeholder="Ej:10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 70px;">
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Modal comida para perros -->
+<div class="modal" id="ModalComidaPerros">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Comida para perros</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicio.html" method="GET">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/comida para perros.jpg" width="140px" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h2>Precio</h2>
+                  $6000
+                  <div class="form-group" style="margin-left: 70px;">
+                  <label for="txtCantidad">Cantidad</label>
+                  <input type="number" class="form-control" id="txtCantidad" name="txtCantidad" placeholder="Ej:10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 70px;">
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Modal comida para hamsters -->
+<div class="modal" id="ModalComidaHamsters">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Comida para hamnsters</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicio.html" method="GET">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/comida para hamsters.jpg" width="140px" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h2>Precio</h2>
+                  $13000
+                  <div class="form-group" style="margin-left: 70px;">
+                  <label for="txtCantidad">Cantidad</label>
+                  <input type="number" class="form-control" id="txtCantidad" name="txtCantidad" placeholder="Ej:10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 70px;">
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Modal comida para hamsters -->
+<div class="modal" id="ModalJaulaHamsters">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Comida para hamnsters</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicio.html" method="GET">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/jaula para hamster.jpg" width="140px" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h2>Precio</h2>
+                  $24000
+                  <div class="form-group" style="margin-left: 70px;">
+                  <label for="txtCantidad">Cantidad</label>
+                  <input type="number" class="form-control" id="txtCantidad" name="txtCantidad" placeholder="Ej:10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 70px;">
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
       <div class="p-5 bg-dark text-white d-flex align-items-center justify-content-between">
         <ul>
           <li>Contacto: +56959335581</li>
