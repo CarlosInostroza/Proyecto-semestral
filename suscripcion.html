@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="icon" href="img/2324212_animals_cats_friendly_kitty_pets_icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+
+  
+  <header class="bg-danger">
+    <div class="container p-2">
+        <div class="row">
+        <div class="col text-center "><a href="#" class="social-color"><i class="fa-brands fa-facebook-square"></i> Facebook</a></div>
+        <div class="col text-center"><a href="#" class="social-color"><i class="fa-brands fa-instagram-square"></i> Instagram</a></div>
+        <div class="col text-center"><a href="#" class="social-color"><i class="fa-brands fa-twitter-square"></i> Twitter</a></div>
+        </div>
+    </div>    
+</header>
+
+<div class="navcolor">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <a href="inicio.html" class="navbar-brand"><img src="img/2324212_animals_cats_friendly_kitty_pets_icon.png" alt="" width="75px"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="inicio.html" class="nav-item nav-link" >Inicio</a>
+              </div>
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar sesion</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  </div>
+</div> 
+
+<div class="container mb-2">
+    <div class="row">
+        <div class="col-sm-10">
+          <h1>Registrate</h1>
+          <form action="cuenta.html">
+              <div class="mb-3 mt-3">
+                <label for="txtNombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese nombre" name="txtNombre">
+              </div>
+              <div class="mb-3">
+                <label for="txtApellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese apellido" name="txtApellido">
+              </div>
+              <div class="mb-3">
+                  <label for="txtRut" class="form-label">Rut:</label>
+                  <input type="text" class="form-control" id="txtRut" placeholder="Ingrese rut" name="txtRut">
+                </div>
+                <div class="mb-3">
+                  <label for="txtComuna" class="form-label">Comuna:</label>
+                  <input type="text" class="form-control" id="txtComuna" placeholder="Ingrese comuna" name="txtComuna">
+                </div>
+                <div class="mb-3">
+                  <label for="txtDireccion" class="form-label">Dirección:</label>
+                  <input type="text" class="form-control" id="txtDireccion" placeholder="Ingrese dirección" name="txtDireccion">
+                </div>
+              <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal inicio de sesion -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Iniciar sesion</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicio.html" method="GET">
+            <div class="form-group"> <!--Form-group llama al estilo de bootstrap-->
+                <label for="txtUser">Usuario</label>
+                <input type="text" class="form-control" id="txtUser" name="txtUser" placeholder="Ej:Tobias uwu">
+                <!--Form-control para aplicar el estilo-->
+            </div>
+            <div class="form-group">
+                <label for="txtPass">Contraseña</label>
+                <input type="password" class="form-control" id="txtPass" name="txtPass" placeholder="Ej: 12345">
+            </div>
+
+
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+        </form>
+        </div>
+    </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" >
+          <a class="nav-link" href="formularioCrearCuenta.html"  style="color: white;">Crear cuenta</a>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="bg-dark">
+    <div class="container">
+      <div class="row p-5">
+        <div class="col">
+          <ul>
+            <li><p class="text-light">Contacto: +56959335581</p></li>
+            <li><p class="text-light">Correo Electronico: delipet@gmail.com</p></li>
+            <li><p class="text-light">Direccion: Vicuña Mackenna 7110, La Florida, Región Metropolitana</p></li>
+          </ul>
+        </div>
+        <div class="col position-relative">
+          <img src="img/2324212_animals_cats_friendly_kitty_pets_icon.png" class="bg-white p-2 rounded position-absolute top-50 start-50 translate-middle" height="120px">
+        </div>
+        <div class="col position-relative">
+          <img src="img/webpay.png" class="rounded position-absolute top-50 start-50 translate-middle" height="70px">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
