@@ -12,11 +12,25 @@
 
 @media(max-width:768px) {
     .card {
+<<<<<<< HEAD
         width: 90%;
         margin-left: 50px;
     }
 }
 
+=======
+        width: 90%
+    }
+}
+@media(max-width:400px) {
+    .card {
+        width: 90%
+    }
+    img{
+        width: 55px;
+    }
+}
+>>>>>>> b0e47a1756a617e04c52fd820dd566510fccc066
 
 .title {
     color: rgb(123, 183, 130);
